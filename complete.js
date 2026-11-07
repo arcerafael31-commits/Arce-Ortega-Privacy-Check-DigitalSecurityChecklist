@@ -1,10 +1,7 @@
-// "Completed" button on each guide page.
-// Uses the same saved list ("done") as the checklist on the home page,
-// so pressing it here ticks the guide's card there too.
 
 const button = document.getElementById("complete");
 const number = parseInt(location.pathname.match(/guide(\d+)\.html/)[1], 10);
-const index = number - 1; // position of this guide's card on the home page
+const index = number - 1; 
 
 function load() {
   try {

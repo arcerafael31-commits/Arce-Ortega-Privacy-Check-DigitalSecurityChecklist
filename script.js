@@ -1,9 +1,9 @@
-// Progress bar + saved checkboxes + search
+
 
 const boxes = document.querySelectorAll(".card input");
 const cards = document.querySelectorAll(".card");
 
-// load which guides were ticked before
+// load which guides were checked before
 const saved = JSON.parse(localStorage.getItem("done") || "[]");
 boxes.forEach((box, i) => {
   box.checked = saved.includes(i);
@@ -24,7 +24,7 @@ function update() {
 }
 update();
 
-// the search - hide cards that don't match what was typed
+// the search - hide guides that don't match yung tinype
 document.getElementById("search").addEventListener("input", (e) => {
   const word = e.target.value.toLowerCase();
   cards.forEach((card) => {
@@ -33,7 +33,7 @@ document.getElementById("search").addEventListener("input", (e) => {
   });
 });
 
-// reset button: untick everything (after asking first)
+// reset button- uncheck everything (after asking first)
 document.getElementById("reset").addEventListener("click", () => {
   if (!confirm("Reset all progress?")) return;
   boxes.forEach((box) => (box.checked = false));

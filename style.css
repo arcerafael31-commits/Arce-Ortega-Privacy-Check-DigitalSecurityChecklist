@@ -218,7 +218,8 @@ h1 span {
   flex-direction: column;
 }
 
-/* the rounded blue box around each emoji */
+
+
 .icon {
   display: grid;
   place-items: center;
@@ -251,12 +252,12 @@ h1 span {
   color: var(--light-blue);
 }
 
-/* card turns green when completed (class added in script.js) */
+
 .card.done {
   border-color: #74e1b2;
 }
 
-/* ---------- call-out + contact ---------- */
+
 .callout,
 .contact {
   padding: 28px;
@@ -285,7 +286,7 @@ h1 span {
   color: var(--gray);
 }
 
-/* ---------- about + guide pages ---------- */
+
 .page-box {
   max-width: 800px;
   margin: 50px auto;
@@ -312,7 +313,7 @@ h1 span {
   color: var(--light-blue);
 }
 
-/* ---------- footer ---------- */
+
 footer {
   text-align: center;
   padding: 25px;
@@ -320,7 +321,6 @@ footer {
   border-top: 1px solid #1e4a7a;
 }
 
-/* ---------- tablet ---------- */
 @media (max-width: 900px) {
   h1 {
     font-size: 46px;
@@ -331,7 +331,7 @@ footer {
   }
 }
 
-/* ---------- phone ---------- */
+
 @media (max-width: 700px) {
   .logo-bar {
     padding: 10px 15px 20px;
@@ -357,7 +357,8 @@ footer {
     font-size: 34px;
   }
 
-  /* hero: picture goes under the text */
+
+
   .hero {
     flex-direction: column;
     align-items: flex-start;
@@ -368,14 +369,17 @@ footer {
     width: 100%;
   }
 
-  /* cards: 1 per row */
+
+
   .cards {
     grid-template-columns: 1fr;
   }
 }
 
-/* ---------- "Completed" button on guide pages ---------- */
-/* Completed button stays in the middle; Next guide sits on the right */
+
+
+
+
 .complete-row {
   display: grid;
   grid-template-columns: 1fr auto 1fr;
